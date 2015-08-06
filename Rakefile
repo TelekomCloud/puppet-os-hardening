@@ -1,10 +1,12 @@
-# encoding: UTF-8
+#!/usr/bin/env rake
+# encoding: utf-8
 
 require 'puppet-lint/tasks/puppet-lint'
 require 'puppetlabs_spec_helper/rake_tasks'
 
 PuppetLint.configuration.send('disable_autoloader_layout')
 PuppetLint.configuration.send('disable_80chars')
+PuppetLint.configuration.send('disable_only_variable_string')
 PuppetLint.configuration.fail_on_warnings = true
 PuppetLint.configuration.ignore_paths = ['vendor/**/*.pp']
 

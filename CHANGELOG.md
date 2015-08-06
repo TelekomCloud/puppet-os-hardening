@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.1.0
+
+**API-change**: renamed module to `hardening-os_hardening`
+
+* improvement: linting
+
+## 1.0.2
+
+* improvement: only run 'update-pam' when needed
+
+## 1.0.1
+
+* bugfix: add missing colon for user-defined paths in PATH env
+* adjust login.defs template to not log user logins (as per Debian defaults)
+
 ## 1.0.0
 
 * add verified support for puppet 3.6, remove support for puppet 3.0 and 3.4
@@ -36,7 +51,7 @@
 
 * feature: add configurable system environment
 * feature: remove suid/sgid bits from blacklist
-* feature: remove suid/sgid bits from unkown files
+* feature: remove suid/sgid bits from unknown files
 
 ## 0.1.0
 
